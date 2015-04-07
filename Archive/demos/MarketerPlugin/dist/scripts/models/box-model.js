@@ -1,0 +1,1 @@
+﻿!function (o) { "use strict"; var e = Backbone.Model.extend({ defaults: { "border-color": "#000", "background-color": "#FFF", "border-style": "solid", "border-width": 1, "border-radius": 3, type: "box" } }, {}); o.BoxModel = e }(MarketerPlugin.Models);

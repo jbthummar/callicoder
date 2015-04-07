@@ -1,0 +1,110 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title>3D Cone</title>
+    <script src="../../lib/Cango3D-7v00.js" type="text/javascript"></script>
+    <script src="js/cube.js"></script>
+    <script src="js/cone.js"></script>
+    <style>
+        #main {
+            display: table;
+            margin: 10px auto;
+            max-width: 600px;
+        }
+
+        #left-part {
+            position: relative;
+            margin: 1em auto;
+            width: 350px;
+            display: table-cell;
+            vertical-align: middle;
+            min-width: 200px;
+        }
+
+            #left-part table {
+                border: 5px solid #aaaaaa;
+                border-radius: 11px;
+                font: 21px Helvetica;
+            }
+
+                #left-part table tr {
+                    background-color: #dddddd;
+                }
+
+                    #left-part table tr input {
+                        height: 30px;
+                        font: 21px helvetica;
+                    }
+
+
+        #right-part {
+            position: relative;
+            margin: 1em auto;
+            width: 350px;
+            height: 350px;
+            border: 6px solid #a0a0a0;
+            display: table-cell;
+            text-align: center;
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+
+        #cvs2 {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body onload='onDocload()'>
+
+    <!--<div style="position: relative; margin: 1em auto; width: 350px; height: 250px; border:1px solid #000000">
+		<canvas id="cvs1" width="350" height="250" style="background-color: rgb(255, 255, 224);"></canvas>
+	</div>-->
+
+    <div id="main">
+        <div id="left-part">
+            <table>
+                <tr>
+                    <td>
+                        <span>Plan slop:</span>
+                    </td>
+                    <td>
+                        <input type="number" id="plane-slope" name="points" min="-20" max="20" step="0.1" value="1.1" style="width: 80px;" onchange="planeAngleChange(value)" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Plan height:</span>                    </td>
+                    <td>
+                        <input type="number" id="plane-height" name="points" min="-200" max="400" step="5" value="75" style="width: 80px;" onchange="planeHeightChange(value)" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Cone slop:</span>
+                    </td>
+                    <td>
+                        <input type="number" id="cone-slope" name="points" min="-200" max="400" step="5" value="75" style="width: 80px;" onchange="planeHeightChange(value)" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Cone height:</span>
+                    </td>
+                    <td>
+                        <input type="number" id="cone-height" name="points" min="100" max="400" step="5" value="200" style="width: 80px;" onchange="coneHeightChange(value)" /></td>
+                </tr>
+            </table>
+
+            <!--plane slop:
+            <input type="number" id="plane-slope" name="points" min="-20" max="20" step="0.1" value="1.1" style="width: 80px;" onchange="planeanglechange(value)">
+            plane height:
+            <input type="number" id="plane-height" name="points" min="-200" max="400" step="5" value="75" style="width: 80px;" onchange="planeheightchange(value)">
+            cone slop:
+            <input type="number" id="cone-slope" name="points" min="0.1" max="10" step="0.1" value="1" style="width: 80px;" onchange="coneslopchange(value)">
+            cone height:
+            <input type="number" id="cone-height" name="points" min="100" max="400" step="5" value="200" style="width: 80px;" onchange="coneheightchange(value)">-->
+        </div>
+        <div id="right-part">
+            <canvas id="cvs2" width="350" height="350"></canvas>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+﻿body {
+    margin: 8px;
+    font-family: Helvetica;
+}
+
+#header {
+    border: 1px solid;
+    text-align: center;
+    background: #001527;
+    border-radius: 17px;
+    color: #efefef;
+    text-align: center;
+    max-width: 750px;
+    min-width: 670px;
+    margin: auto;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 750px;
+    min-width: 670px;
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.button_replay {
+    margin: 10px auto;
+    display: block;
+    width: 90px;
+    height: 37px;
+    background-color: #055005;
+    color: #FFF;
+    border: 1px solid transparent;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+#origitem_container {
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.item_draggable {
+    display: table-cell;
+    height: 18px;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px 10px 0;
+    font-size: 17px;
+    float: left;
+}
+
+.item_draggable_normal {
+    background-color: #FF3305;
+    color:#EFEFEF;
+}
+
+.item_draggable_hover {
+    background-color: yellowgreen;
+}
+
+.table_container {
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#item_container_table {
+    width: 90%;
+    border: 1px solid black;
+    text-align: center;
+    height: 300px;
+    margin: auto;
+}
+
+    #item_container_table td {
+        border: 1px solid black;
+    }
+
+
+table, tr, th, td {
+    border-collapse: collapse;
+}
+
+#result {
+    width: 50%;
+    margin: 50px auto;
+    max-height: 200px;
+    overflow: auto;
+}
+
+    #result table {
+        border: 1px solid White;
+        width: 98%;
+        text-align: center;
+        color: White;
+    }
+
+        #result table tr th {
+            background-color: grey;
+            border: 1px solid White;
+            color: Black;
+        }
+
+        #result table tr td {
+            border: 1px solid White;
+        }
+
+        #result table tr.correct {
+            background-color: Green;
+        }
+
+        #result table tr.incorrect {
+            background-color: Red;
+        }

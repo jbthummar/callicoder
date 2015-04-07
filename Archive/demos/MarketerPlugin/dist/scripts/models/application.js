@@ -1,0 +1,1 @@
+﻿!function (i) { "use strict"; var e = Backbone.Model.extend({ defaults: { width: 700, height: 1e3, minWidth: 700, maxWidth: 1e3, minHeight: 700, maxHeight: 1200 }, initialize: function () { } }, {}); i.ApplicationModel = e }(MarketerPlugin.Models);

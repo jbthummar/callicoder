@@ -1,0 +1,29 @@
+<div id="{{idPrefix}}-dialog" title="Box Editor">
+  <div class="""{{idPrefix}}-container">
+    <div class="{{idPrefix}}-component">
+      <span class="{{idPrefix}}-table_cell">Border Color:</span>
+      <input class="{{idPrefix}}-table_cell {{idPrefix}}-border-color" type="text" size="8"/>
+    </div>
+    <div class="{{idPrefix}}-component">
+      <span class="{{idPrefix}}-table_cell">Background Color:</span>
+      <input class="{{idPrefix}}-table_cell {{idPrefix}}-background-color" type="text" size="8"/>
+    </div>
+    <div class="{{idPrefix}}-component">
+      <span class="{{idPrefix}}-table_cell">Border Style: </span>
+      <select class="{{idPrefix}}-table_cell {{idPrefix}}-border-style" value="Solid" >
+        <option value="none">None</option>
+        <option value="solid">Solid</option>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+      </select>
+    </div>
+    <div class="{{idPrefix}}-component">
+      <span class="{{idPrefix}}-table_cell">Border Width:</span>
+      <input class="{{idPrefix}}-table_cell {{idPrefix}}-border-width" type="number" name="points" min="0" max="20" step="1" value="3"/>
+    </div>
+    <div class="{{idPrefix}}-component">
+      <span class="{{idPrefix}}-table_cell">Round Border corners:</span>
+      <input class="{{idPrefix}}-table_cell {{idPrefix}}-border-radius" type="number" name="points" min="0" max="30" step="1" value="3"/>
+    </div>
+  </div>
+</div>

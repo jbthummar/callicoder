@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Marketer Plugin Demo</title>
+
+    <!--Scripts-->
+
+    <!--Venders-->
+    <script src="../../lib/min/jquery-1.11.1.min.js"></script>
+    <script src="../../lib/min/jquery-ui.min.js"></script>
+    <script src="../../lib/min/underscore.min.js"></script>
+    <script src="../../lib/min/backbone.min.js"></script>
+    <script src="../../lib/min/handlebars-v3.0.0.min.js"></script>
+
+    <!--Application Js-->
+    <script src="dist/scripts/module.js"></script>
+    <script src="dist/scripts/models/application.js"></script>
+    <script src="dist/scripts/views/application.js"></script>
+    <script src="dist/templates/toolbar.js"></script>
+    <script src="dist/scripts/views/toolbarView.js"></script>
+    <script src="dist/scripts/models/box-model.js"></script>
+    <script src="dist/scripts/views/box-view.js"></script>
+    <script src="dist/templates/boxDialog.js"></script>
+    <script src="dist/scripts/views/box-dialog-view.js"></script>
+
+    <!--Styles-->
+    <link href="dist/css/style.css" rel="stylesheet" />
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main">
+        <div id="page-dimension">
+            <div>
+                <span>Width :</span>
+                <input id="page-width" type="number" min="700" max="1000" name="width" value="700" />
+            </div>
+            <div>
+                <span>Height</span>
+                <input id="page-height" type="number" min="700" max="1200" name="height" value="1000" />
+            </div>
+        </div>
+        <div id="wrapper">
+        </div>
+    </div>
+</body>
+</html>

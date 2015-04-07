@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Radley';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Radley'), url(http://fonts.gstatic.com/s/radley/v9/vll9ycIrsr1I7acn1W47B-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Radley';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Radley Italic'), local('Radley-Italic'), url(http://fonts.gstatic.com/s/radley/v9/7kJhhuyv_IA9NrjME17dc3YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}

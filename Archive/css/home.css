@@ -1,0 +1,64 @@
+﻿body {
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.profile {
+    margin: 20px 0;
+    padding: 20px 0px 0;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: rgb(245, 246, 245); /*height: 100%;*/
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.navmenu li {
+    border-right: 1px black solid;
+    padding-right: 5px;
+    display: inline;
+}
+
+    .navmenu li:last-of-type {
+        border-right: none;
+    }
+
+.demos {
+    padding: 14px;
+    background-color: #009;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.jignesh-card {
+    margin-top: 30px;
+}
+
+@media (max-width: 920px) {
+    .sidebar {
+        /*height: 350px;         width: 100%;*/
+        position: static;
+        padding-bottom: 10px;
+    }
+
+    .profile {
+        margin: 0px 0px;
+    }
+
+    .profilename {
+        margin-bottom: 0px;
+    }

@@ -1,0 +1,250 @@
+﻿body
+{
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+#wrapper
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.header-container
+{
+    width: 707px;
+    height: 64px;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.header-content
+{
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    height: 100%;
+    line-height: 65px;
+    font-size: 55px;
+}
+
+#calendar-parent
+{
+    width: 700px;
+    margin: auto;
+}
+
+#calendar
+{
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-color: #2f3f5F;
+    border-radius: 10px;
+}
+
+.calendar-header
+{
+    height: 60px;
+    text-align: center;
+    position: relative;
+    background-color: #2f3f5F;
+    font-weight: bolder;
+}
+
+.header-btn
+{
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    height: 45px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: #2f3f5F;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header-btn:disabled
+{
+    color: rgb(120,120,120);
+    background-color: rgb(221,221,221);
+}
+
+.prev-btn
+{
+    left: 10px;
+}
+
+.next-btn
+{
+    right: 10px;
+}
+
+.header-mnth
+{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+}
+
+.table-monthview
+{
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 10px;
+    border-spacing: 3px;
+    border-spacing: 6px;
+}
+
+.table-monthview th, .table-monthview td
+{
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.table-monthview .week-header
+{
+    background-color: grey;
+    color: white;
+    height: 35px;
+}
+
+.table-monthview tr th
+{
+    width: 14%;
+}
+
+.table-monthview thead tr
+{
+    font-size: 30px;
+}
+
+.table-monthview tbody tr
+{
+    height: 60px;
+    font-size: 30px;
+}
+
+.day-parent
+{
+}
+
+.active
+{
+    background-color: #FA8;
+}
+
+.inactive
+{
+    background-color: #EDE;
+}
+
+.day
+{
+    text-align: center;
+    color: #000000;
+    height: 60px;
+    line-height: 60px;
+    background-color: #CCCCCC;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.day.hover
+{
+    background-color: #CCCC75;
+}
+
+.today
+{
+    color: black;
+    background-color: #777777;
+    text-decoration: underline;
+}
+
+.task-present
+{
+    background-color: #F8D623;
+}
+
+.dialog-input-task
+{
+    margin: 10px;
+}
+
+.dialog-btn-add
+{
+    display: block;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 2px 15px;
+    display: inline-block;
+}
+
+.dialog-btn-delete
+{
+    display: block;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 2px 15px;
+    display: inline-block;
+    float: right;
+}
+
+#month-report
+{
+    width: 700px;
+    margin: 20px auto 30px;
+}
+
+.table-report
+{
+    width: 100%;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+.table-report th, .table-report td
+{
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.table-report th
+{
+    background-color: #2f3f5F;
+    color: #DDDDDD;
+}
+
+.table-report td
+{
+    background-color: #DDDDDD;
+    color: #000022;
+}
+
+.table-report caption
+{
+    font-size: 25px;
+    background-color: #AAAAAA;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #232323;
+}

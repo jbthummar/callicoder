@@ -1,0 +1,1 @@
+﻿!function (e) { "use strict"; e.MarketerPlugin = {} }(window), function (e) { e.Views = {}, e.Models = {}, $(document).ready(function () { { var i = new e.Models.ApplicationModel({}); new e.Views.ApplicationView({ model: i, el: $("#main") }) } }) }(MarketerPlugin);

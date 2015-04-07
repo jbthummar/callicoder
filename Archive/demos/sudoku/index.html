@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="Crossword Compiler (www.crossword-compiler.com)">
+
+    <style type="text/css">
+        <!--
+        BODY, .Clues, .GridClues {
+            font-size: -3pt;
+            font-family: Times New Roman,Times;
+        }
+        -->
+    </style>
+    <style type="text/css">
+        <!--
+        .PuzTitle {
+            font-size: 15pt;
+            color: #800000;
+            font-weight: bold;
+        }
+
+        .CopyTag {
+            font-size: 10pt;
+            color: #000000;
+        }
+        -->
+    </style>
+    <title>Crucigrama</title>
+
+</head>
+<body text="#003399" bgcolor="#ffffff">
+
+    <script src="CrosswordCompilerApp/jquery.js"></script>
+    <script src="CrosswordCompilerApp/raphael.js"></script>
+    <script src="CrosswordCompilerApp/crosswordCompiler.js"></script>
+    <script src="2.js"></script>
+    <script>
+        $(function () { $("#CrosswordCompilerPuz").CrosswordCompiler(CrosswordPuzzleData, null, { SUBMITMETHOD: "POST", PROGRESS: "", ROOTIMAGES: "CrosswordCompilerApp/CrosswordImages/" }); });</script>
+    <div id="CrosswordCompilerPuz"></div>
+
+
+
+</body>
+</html>
