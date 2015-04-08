@@ -1,0 +1,179 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Demos</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Demos of Categorization game, TODO task calendar and 3d Cone.">
+    <style>
+        body {
+            font-family: Helvetica;
+            text-align: center;
+        }
+
+        .header-container {
+            width: 100%;
+            height: 80px;
+            background: rgb(30,87,153);
+            background: -moz-linear-gradient(left, rgba(30,87,153,1) 3%, rgba(255,255,255,1) 50%, rgba(30,87,153,1) 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(3%,rgba(30,87,153,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(30,87,153,1)));
+            background: -webkit-linear-gradient(left, rgba(30,87,153,1) 3%,rgba(255,255,255,1) 50%,rgba(30,87,153,1) 100%);
+            background: -o-linear-gradient(left, rgba(30,87,153,1) 3%,rgba(255,255,255,1) 50%,rgba(30,87,153,1) 100%);
+            background: -ms-linear-gradient(left, rgba(30,87,153,1) 3%,rgba(255,255,255,1) 50%,rgba(30,87,153,1) 100%);
+            background: linear-gradient(to right, rgba(30,87,153,1) 3%,rgba(255,255,255,1) 50%,rgba(30,87,153,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#1e5799',GradientType=1 );
+        }
+
+        .header-image {
+            width: 80px;
+            height: 100%;
+            margin: auto;
+            background-image: url('../images/profile.jpg');
+        }
+
+        .demo-title-header {
+            margin-top: 10px;
+            padding: 3px 0;
+            background-color: rgba(173, 168, 190, 1);
+            color: rgb(47, 42, 79);
+            border-radius: 8px;
+        }
+
+        .demo-container {
+            max-width: 800px;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid;
+            padding: 0 23px;
+            border-radius: 18px;
+            background-color: rgb(188, 203, 202);
+            box-shadow: blanchedalmond;
+            -webkit-box-shadow: inset 0px -1px 19px 10px rgba(0,0,0,0.66);
+            -moz-box-shadow: inset 0px -1px 19px 10px rgba(0,0,0,0.66);
+            box-shadow: inset 0px -1px 19px 10px rgba(0,0,0,0.66);
+        }
+
+        .demo-wrapper {
+            padding: 50px 0;
+            text-align: center;
+            display: table;
+        }
+
+        .demo {
+            display: table-row;
+        }
+
+        .demo-link-container {
+            height: 40px;
+            vertical-align: top;
+            color: white;
+            display: table-cell;
+            width: 140px;
+            text-align: left;
+        }
+
+        .demo-desc-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 30px;
+            padding-bottom: 40px;
+        }
+
+            .demo-desc-container p {
+                text-align: left;
+                line-height: 25px;
+                font-size: 16px;
+            }
+
+                .demo-desc-container p span {
+                    font-weight: bold;
+                    color: #064602;
+                    font-size: 20px;
+                }
+
+        .demo-link {
+            vertical-align: middle;
+            line-height: 40px;
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            padding: 0 10px;
+            border-radius: 5px;
+            background: rgb(153,153,153); /* Old browsers */
+            background: -moz-linear-gradient(-45deg, rgba(153,153,153,1) 3%, rgba(6,11,20,1) 51%, rgba(153,153,153,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(3%, rgba(85, 5, 5, 1)), color-stop(51%,rgba(15, 78, 15, 1)), color-stop(100%,rgba(17, 17, 85, 1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(-45deg, rgba(85, 5, 5, 1) 3%,rgba(15, 78, 15, 1) 51%,rgba(17, 17, 85, 1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(-45deg, rgba(85, 5, 5, 1) 3%,rgba(15, 78, 15, 1) 51%,rgba(17, 17, 85, 1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(-45deg, rgba(85, 5, 5, 1) 3%,rgba(15, 78, 15, 1) 51%,rgba(17, 17, 85, 1) 100%); /* IE10+ */
+            background: linear-gradient(135deg, rgba(85, 5, 5, 1) 3%,rgba(15, 78, 15, 1) 51%,rgba(17, 17, 85, 1) 100%) /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#999999',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-image"></div>
+    </div>
+    <div class="demo-title-header">
+        <h1>Demos of various javascript standalone applications</h1>
+    </div>
+    <div class="demo-container">
+        <div class="demo-wrapper">
+            <div class="demo">
+                <div class="demo-link-container">
+                    <a class="demo-link" title="CalendarApp" href='cone-app'>3D Cone Demo</a>
+                </div>
+                <div class="demo-desc-container">
+                    <p>
+                        <span>Demo of 3D Cone. </span>
+                        <br>
+                        A 3D cone designed using open source library named 'Cango3D' which provides support for drawing and rotating object in 3D space.
+							<br>
+                        A plane intersecting cone depicts the conic section formed such as <b>"Circle", "Ellipse", "Parabola" and "Hyperbola"</b>.
+							<br>
+                        Also user can drag the whole cone using mouse pointers.
+							<br>
+                        Functionality provided for changing cone and plane dimensions.
+							<br>
+                        Plug-ins Used: <b>Cango3D.js</b>
+                    </p>
+                </div>
+            </div>
+            <div class="demo">
+                <div class="demo-link-container">
+                    <a class="demo-link" title="CalendarApp" href='categorization'>Categorization</a>
+                </div>
+                <div class="demo-desc-container">
+                    <p>
+                        <span>Demo of Categorization. </span>
+                        <br>
+                        A simple game of categorization is developed in which user has to categorized items in to particular category.
+							<br>
+                        User has to drag the item from the pool and drop it in particular category slot.
+							<br>
+                        A <b>json file</b> is used to store the initial data.
+							<br>
+                        A feedback result based on correct or incorrect attempt is stored below in the table.
+							<br>
+                        Plug-ins Used: <b>jquery.js, jquery-ui.js, Backbone.js</b>
+                    </p>
+                </div>
+            </div>
+            <div class="demo">
+                <div class="demo-link-container">
+                    <a class="demo-link" title="CalendarApp" href='todo-calendar'>TODO Calendar</a>
+                </div>
+                <div class="demo-desc-container">
+                    <p>
+                        <span>Demo of calendar.</span><br>
+                        User can navigate through previous or next months. Also user can add task for the particular date.
+							<br>
+                        A task added by user will be stored using local storage.
+							<br>
+                        Plug-ins Used: <b>jquery.js, jquery-ui.js, Backbone.js</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
