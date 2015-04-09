@@ -4,6 +4,7 @@
     <title>Draw</title>
     <meta name="viewport" content="width=device-width,initial-sclae=1.0" />
     <script src="../../lib/jquery-1.11.0.js"></script>
+    <script src="../../lib/text.js"></script>
     <script src="scripts/draw.js"></script>
 
     <style>
@@ -84,6 +85,8 @@
             /*width: 500px;*/
             /*height: 380px;*/
             border: 1px solid black;
+            padding: 6px;
+            position: relative;
         }
 
         #drawing-pad {
