@@ -42,14 +42,14 @@
         }
 
         #toolbox-wrapper {
-            width: 40px;
+            width: 60px;
             border: 1px solid black;
             background-color: #FFFFFF;
         }
 
             #toolbox-wrapper table td {
-                width: 19px;
-                height: 25px;
+                width: 30px;
+                height: 35px;
                 padding: 0px;
             }
 
@@ -59,6 +59,7 @@
             border: 1px solid transparent;
             background-repeat: no-repeat;
             background-position: center;
+            background-size: 15px 19px;
         }
 
             .tool-item.selected {

@@ -38,7 +38,7 @@
         });
 
         function openWindowWithPostRequest(imageData) {
-            var winName = 'MywindowDraw';
+            var winName = '_self';
             var winURL = 'http://localhost:8003/demos/GoogleMapCapture/final.debug.php';
             var params = { 'imageData': imageData };
             var form = document.createElement("form");
